@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register for Sports Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sports Day Registration</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="regForm">
+      <label>Name: <input type="text" required></label><br><br>
+      <label>Roll No: <input type="text" required></label><br><br>
+      <label>Department: <input type="text" required></label><br><br>
+      <label>Select Event:
+        <select required>
+          <option value="">--Choose--</option>
+          <option>100m Sprint</option>
+          <option>Long Jump</option>
+          <option>Shot Put</option>
+          <option>Relay</option>
+        </select>
+      </label><br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 College Sports Committee</p>
+  </footer>
+
+  <script>
+    document.getElementById("regForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Registration Successful! See you on Sports Day.");
+    });
+  </script>
+</body>
+</html>
